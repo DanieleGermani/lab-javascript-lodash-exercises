@@ -8,3 +8,17 @@
                    "4 October", "Filius Flitwick", "17 October", "Molly Weasley",
                    "30 October", "Bill Weasley", "29 November", "Rubeus Hagrid",
                    "6 December", "Charlie Weasley", "12 December"];
+
+var birthdaysList = _.chunk(birthdays, 2);
+console.log(birthdaysList);
+
+var moreBirthdays = ["Lily Evans", "30 January", "James Potter", "27 March",
+                     "Dudley Dursley", "30 June", "Tom Riddle", "31 December"];
+
+var moreBirthdaysList = _.chunk(moreBirthdays, 2);
+
+console.log(moreBirthdaysList);
+
+var allBirthdays = _.concat(birthdaysList, moreBirthdaysList);
+
+console.log(allBirthdays);
